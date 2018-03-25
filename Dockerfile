@@ -7,6 +7,7 @@ FROM nvidia/cuda:9.0-cudnn7-devel
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     git wget \
+    graphicsmagick \
     libsnappy-dev \
     libgraphicsmagick1-dev
 RUN git config --global url."https://".insteadOf git://
